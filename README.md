@@ -36,7 +36,7 @@ import (
   "time"
   "fmt"
   
-  sdk "github.com/TinkoffCreditSystems/invest-openapi-go-sdk"
+  sdk "github.com/p12s/openapi-go-sdk"
 )
 
 func main() {
