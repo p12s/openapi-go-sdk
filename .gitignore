@@ -14,6 +14,7 @@ mem.out
 .vagrant/
 *.vdi
 **/.DS_Store
+.env
 
 # User-specific stuff
 .idea/**/workspace.xml

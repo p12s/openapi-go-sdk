@@ -2,7 +2,7 @@
 .SILENT:
 
 test:
-	env GO111MODULE=on go test --short -race -coverprofile=cover.out -v ./...
+	env GO111MODULE=on go test --short -coverprofile=cover.out -v -tags=integration ./...
 	make test.coverage
 
 test.coverage:
