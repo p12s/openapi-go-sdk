@@ -9,7 +9,10 @@ import (
 
 // see API docs here: https://tinkoffcreditsystems.github.io/invest-openapi/swagger-ui/#/sandbox/post_sandbox_register.
 
+// REST_API_URL - common API path
 const REST_API_URL = "https://api-invest.tinkoff.ru/openapi"
+
+// TIMEOUT - by default 30 secons wait
 const TIMEOUT = time.Second * 30
 
 // RestClient provide to rest methods from tinkoff invest api.

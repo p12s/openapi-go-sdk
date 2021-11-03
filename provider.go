@@ -11,7 +11,7 @@ import (
 
 var _ Provider = &defaultHTTP{}
 
-// Provider
+// Provider - simple actions for provide request
 type Provider interface {
 	Get(ctx context.Context, url string, token string, unmarshal interface{}) error
 	Post(ctx context.Context, url string, token string, payload, unmarshal interface{}) error

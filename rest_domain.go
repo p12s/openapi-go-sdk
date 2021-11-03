@@ -4,11 +4,13 @@ package sdk
 type AccountType string
 
 const (
-	AccountTinkoff    AccountType = "Tinkoff"    // brokerage account
-	AccountTinkoffIIS AccountType = "TinkoffIis" // IIS
+	// AccountTinkoff - brokerage account
+	AccountTinkoff AccountType = "Tinkoff"
+	// AccountTinkoffIIS - IIS
+	AccountTinkoffIIS AccountType = "TinkoffIis"
 )
 
-// Account
+// Account - account info
 type Account struct {
 	Type AccountType `json:"brokerAccountType"`
 	ID   string      `json:"brokerAccountId"`
@@ -56,11 +58,13 @@ const (
 	OrderStatusPendingNew     OrderStatus = "PendingNew"
 )
 
-// OrderType
+// OrderType - limited or just market buying
 type OrderType string
 
 const (
-	OrderTypeLimit  OrderType = "Limit"
+	// OrderTypeLimit - limited
+	OrderTypeLimit OrderType = "Limit"
+	// OrderTypeMarket - marked
 	OrderTypeMarket OrderType = "Market"
 )
 
@@ -76,4 +80,5 @@ type Order struct {
 	Price         float64       `json:"price"`
 }
 
-const DefaultAccount = "" // default "brokerAccountType" - "Tinkoff"
+// DefaultAccount - in system account is "Tinkoff" by default
+const DefaultAccount = ""
