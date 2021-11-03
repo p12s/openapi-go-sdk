@@ -17,18 +17,20 @@ and implemented 2 REST methods:
 ## Where can I get an authentication token?
 In the investment section of your personal tinkoff account.  
 In your personal account:
-- Go to settings;
-- Check that the function “Confirmation of transactions by code” is disabled;
-- Issue a token for exchange trading and sandbox mode;
-- Copy the token and save, the token is displayed only once, you will not be able to view it later, however, you can issue an unlimited number of tokens.
+- Go to settings  
+- Check that the function “Confirmation of transactions by code” is disabled  
+- Issue a token for exchange trading and sandbox mode  
+- Copy the token and save, the token is displayed only once, you will not be able to view it later, however, you can issue an unlimited number of tokens  
+  
+Then rename file "*.env.example*" to "*.env*" and paste your token into.
 
 ## Example
 Installation: 
-```
+```go
 go get -u github.com/p12s/openapi-go-sdk
 ```
 Using:
-```
+```go
 package main
 
 import (
